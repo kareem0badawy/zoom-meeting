@@ -16,6 +16,8 @@ class AppServiceProvider extends ServiceProvider
         $this->app->bind(\GuzzleHttp\Client::class,function(){
             return new \GuzzleHttp\Client([
                 'base_uri' => 'https://api.zoom.us/v2/',
+                'timeout' => 600, // Response timeout
+                'connect_timeout' => 600, // Connection timeout
                 'headers' => [
                     'Authorization' => 'Bearer ' . env('ZOOM_JWT_TOKEN'), // ZOOM_JWT_TOKEN       
                     'Accept' => 'application/json',

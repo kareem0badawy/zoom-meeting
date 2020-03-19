@@ -2,7 +2,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/kareem0badawy/zoom-meeting">
-    <img src="zoom/zoom.jpg" alt="Laravel-zoom" width="1000" height="350">
+    <img src="zoom.jpg" alt="Laravel-zoom" width="1000" height="350">
 </a>
 </p>
 
